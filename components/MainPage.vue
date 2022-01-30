@@ -14,7 +14,9 @@
       </div>
     </div>
 
-    <h1 class="text-center text-5xl font-bold mt-20">Projekte</h1>
+    <h1 class="text-center text-5xl font-bold mt-20">
+      Projekte
+    </h1>
     <ProjectsSlider />
 
     <div class="mt-20">

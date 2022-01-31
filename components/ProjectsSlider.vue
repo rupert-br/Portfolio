@@ -1,7 +1,11 @@
 <template>
   <div class="container flex items-center relative mt-8 mx-auto">
-    <button id="slide-left" @click="scrollLeft()" class="absolute shadow-xl left-0 w-14 h-14 mx-auto bg-blue-50 rounded-full flex justify-center items-center text-3xl hover:text-blue-600 transition">&larr;</button>
-    <button id="slide-right" @click="scrollRight()" class="absolute shadow-xl right-0 w-14 h-14 mx-auto bg-blue-50 rounded-full flex justify-center items-center text-3xl">&rarr;</button>
+    <button id="slide-left" class="absolute shadow-xl left-0 w-14 h-14 mx-auto bg-blue-50 rounded-full flex justify-center items-center text-3xl hover:text-blue-600 transition" @click="scrollLeft()">
+      &larr;
+    </button>
+    <button id="slide-right" class="absolute shadow-xl right-0 w-14 h-14 mx-auto bg-blue-50 rounded-full flex justify-center items-center text-3xl" @click="scrollRight()">
+      &rarr;
+    </button>
     <div id="slide-container" class="overflow-x-scroll scroll-smooth flex">
       <div class="flex-none m-5">
         <img class="h-64 w-auto" src="https://images.unsplash.com/photo-1501196354995-cbb51c65aaea">

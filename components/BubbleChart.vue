@@ -1,5 +1,5 @@
 <template>
-  <div class="chart flex justify-center"></div>
+  <div class="chart flex justify-center" />
 </template>
 
 <script>

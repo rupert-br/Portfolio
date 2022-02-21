@@ -10,14 +10,24 @@
         </div>
       </div>
       <div class="basis-1/2">
-        <div class="h-72 w-72 bg-blue-600 shadow-xl rounded-full mt-12 md:mt-0" />
+        <div class="h-72 w-72 bg-blue-600 shadow-xl shadow-blue-300 text-white text-6xl font-extrabold rounded-full mt-12 md:mt-0 flex items-center justify-center">
+          <pre>&lt;&sol;&gt;</pre>
+        </div>
       </div>
     </div>
 
     <h1 class="text-center text-5xl font-bold mt-20">
       Projekte
     </h1>
-    <ProjectsSlider />
+    <ProjectsSlider :projects="projects" />
+
+    <div class="mt-20">
+      <h1 class="text-center text-5xl font-bold mb-12">
+        Technologien
+      </h1>
+      <BubbleChart :technologies="technologies" />
+    </div>
+
     <div class="mt-20">
       <div class="text-5xl font-bold mb-8">
         Contact me
@@ -43,3 +53,18 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  props: {
+    projects: {
+      type: Array,
+      required: true
+    },
+    technologies: {
+      type: Array,
+      required: true
+    }
+  }
+}
+</script>

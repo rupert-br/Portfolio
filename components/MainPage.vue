@@ -18,12 +18,6 @@
       Projekte
     </h1>
     <ProjectsSlider />
-
-    <div class="mt-20">
-      <div class="text-5xl font-bold mb-8">
-        Customers
-      </div>
-    </div>
     <div class="mt-20">
       <div class="text-5xl font-bold mb-8">
         Contact me

@@ -21,7 +21,7 @@
         Letzte Projekte
       </h1>
       <NuxtLink to="/project" class="flex justify-center mt-2 text-blue-600">
-        Alle Projekte &rarr;
+        Alle Projekte ansehen &rarr;
       </NuxtLink>
     </div>
 

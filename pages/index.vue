@@ -11,7 +11,7 @@ export default {
   name: 'IndexPage',
   async asyncData ({ $content, params }) {
     const hello = await $content('hello').fetch()
-    const projects = await $content('projects').fetch()
+    const projects = await $content('projects').limit(4).fetch()
     return {
       hello, projects
     }

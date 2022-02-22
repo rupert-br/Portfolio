@@ -4,7 +4,7 @@ project_name: desice-io
 headline: Cloud-basierte Plattform für die statistische Versuchsplanung
 description: 
 url: http://desice.io
-hero_image: yosemite.jpg
+hero_image: landing-page.png
 urlCopy: desice.io
 technologies:
  - Python

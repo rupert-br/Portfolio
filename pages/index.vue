@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-slate-50 dark:bg-zinc-800 ">
+  <div class="bg-neutral-50 dark:bg-neutral-800 ">
     <NavBar />
     <MainPage :projects="projects" :technologies="getUsedTechnologies" />
     <MainFooter />
@@ -29,12 +29,12 @@ export default {
         })
       })
 
-      const results = []
-      for (const key in usedTechnologies) {
-        results.push({ facilityId: key, responseCount: usedTechnologies[key] })
-      }
+      // const results = []
+      // for (const key in usedTechnologies) {
+      //   results.push({ Id: key, Count: usedTechnologies[key] })
+      // }
 
-      return results
+      return usedTechnologies
     }
   }
 }

@@ -1,8 +1,8 @@
 <template>
   <div class="bg-slate-50 dark:bg-zinc-800 ">
     <NavBar />
-    <NuxtLink to="/project">
-      Zurück
+    <NuxtLink to="/project" class="bg-blue-600 text-white rounded-lg p-1 mx-2 my-1">
+      &larr; Zurück
     </NuxtLink>
     <article>
       <h1 class="text-5xl">

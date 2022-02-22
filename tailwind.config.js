@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   content: [
     './components/**/*.{js,vue,ts}',
@@ -8,6 +10,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        spacegrotesk: "'Space Grotesk', serif",
+        mono: ['Space Mono', ...defaultTheme.fontFamily.mono]
+      }
     }
   },
   plugins: []

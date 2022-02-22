@@ -1,7 +1,7 @@
 <template>
-  <footer class="h-40 bg-slate-800 text-white">
+  <footer class="bg-neutral-800 text-white p-4 dark:bg-green-500">
     <div>
-      Footer
+      © Rupert Brandstätter 2022
     </div>
   </footer>
 </template>

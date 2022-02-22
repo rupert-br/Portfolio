@@ -11,7 +11,7 @@
       </div>
       <div class="basis-1/2">
         <div class="h-64 w-64 ml-4 shadow-xl bg-green-500 shadow-green-300/80 text-white text-6xl font-extrabold mt-12 md:mt-0 flex items-center justify-center">
-          <img src="~/static/img/pixel_me.png" alt="Pixel Image Rupert" class="object-clip">
+          <img src="/images/pixel_me.png" alt="Pixel Image Rupert" class="object-clip">
         </div>
       </div>
     </div>

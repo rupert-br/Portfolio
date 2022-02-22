@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-neutral-50 dark:bg-neutral-800 ">
+  <div class="bg-neutral-50 dark:bg-neutral-800">
     <NavBar />
     <MainPage :projects="projects" :technologies="getUsedTechnologies" />
     <MainFooter />

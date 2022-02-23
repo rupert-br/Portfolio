@@ -1,13 +1,13 @@
 <template>
   <div class="px-2 md:px-40">
-    <div class="mt-16 mb-20 md:mt-20 md:mb-20">
+    <div class="mt-16 mb-20 md:mt-20 md:mb-20 mx-auto max-w-6xl">
       <div class="flex flex-col md:flex-row items-center mx-auto">
-        <div class="text-center">
+        <div class="">
           <div class="text-4xl md:text-6xl font-bold md:pb-6 font-spacegrotesk dark:text-white">
             Hello, I'm Rupert
           </div>
           <div class="text-2xl font-mono mt-2 dark:text-white">
-            <span class="py-3 px-4 decoration-rose-500 underline underline-offset-4 decoration-solid decoration-4 tracking-tighter">Web Developer</span>
+            <span class="py-3 decoration-rose-500 underline underline-offset-4 decoration-solid decoration-4 tracking-tighter">Web Developer</span>
           </div>
         </div>
       </div>
@@ -29,7 +29,7 @@
         Verwendete Technologien
       </h1>
       <div class="flex flex-wrap space-x-3 justify-center px-4 md:px-24">
-        <div v-for="(key, tech) in technologies" :key="tech" class="my-2 bg-neutral-600 shadow-md shadow-neutral-500/30 hover:bg-rose-700 transition px-4 py-2 text-white text-xl">
+        <div v-for="(key, tech) in technologies" :key="tech" class="my-2 bg-neutral-600 shadow-md shadow-neutral-500/30 hover:bg-rose-600 transition px-4 py-2 text-white text-xl">
           {{ tech }}
         </div>
       </div>

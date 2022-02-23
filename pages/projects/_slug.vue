@@ -1,18 +1,21 @@
 <template>
   <div class="bg-slate-50 dark:bg-zinc-800 ">
     <NavBar />
-    <NuxtLink to="/project" class="bg-blue-600 text-white rounded-lg p-1 mx-2 my-1">
-      &larr; Zurück
-    </NuxtLink>
-    <article>
-      <h1 class="text-5xl">
-        {{ project.title }}
-      </h1>
-      <h3>
-        {{ project.headline }}
-      </h3>
-      <nuxt-content :document="project" />
-    </article>
+    <div class="mx-12">
+      <NuxtLink to="/project" class="bg-rose-500 text-white px-4 py-2 mx-2">
+        &larr; Zurück
+      </NuxtLink>
+      <div class="mt-8">
+        <h1 class="text-5xl font-extrabold mb-2 font-spacegrotesk">
+          {{ project.title }}
+        </h1>
+        <h3>
+          {{ project.headline }}
+        </h3>
+        <p>Article last updated: {{ project.year }}</p>
+        <nuxt-content :document="project" class="mt-4 prose" />
+      </div>
+    </div>
     <MainFooter />
   </div>
 </template>
@@ -21,7 +24,6 @@
 export default {
   async asyncData ({ $content, params }) {
     const project = await $content('projects', params.slug).fetch()
-
     return { project }
   }
 }

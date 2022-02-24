@@ -14,10 +14,10 @@
     </div>
 
     <div class="flex flex-col mx-auto mt-32">
-      <h1 class="text-center text-4xl md:text-5xl font-bold font-spacegrotesk">
+      <h1 class="text-center text-4xl md:text-5xl font-bold font-spacegrotesk dark:text-white">
         Akutelle Projekte
       </h1>
-      <NuxtLink to="/project" class="flex justify-center mt-2 text-neutral-500 hover:text-rose-600">
+      <NuxtLink to="/project" class="flex justify-center mt-2 text-neutral-500 hover:text-rose-600 dark:text-neutral-300">
         Alle Projekte ansehen &rarr;
       </NuxtLink>
     </div>
@@ -25,26 +25,26 @@
     <ProjectsSlider :projects="projects" />
 
     <div class="mt-32 mb-20">
-      <h1 class="text-center text-5xl font-bold mb-12 font-spacegrotesk">
+      <h1 class="text-center text-5xl font-bold mb-12 font-spacegrotesk dark:text-white">
         Verwendete Technologien
       </h1>
       <div class="flex flex-wrap space-x-3 justify-center px-4 md:px-24">
-        <div v-for="(key, tech) in technologies" :key="tech" class="my-2 bg-neutral-600 shadow-md shadow-neutral-500/30 hover:bg-rose-600 transition px-4 py-2 text-white text-xl">
+        <div v-for="(key, tech) in technologies" :key="tech" class="my-2 bg-neutral-700 shadow-md shadow-neutral-500/30 hover:bg-rose-600 transition px-4 py-2 text-white text-xl">
           {{ tech }}
         </div>
       </div>
     </div>
 
     <div class="mt-28 mb-20 px-4">
-      <div class="text-center text-5xl font-bold font-spacegrotesk">
+      <div class="text-center text-5xl font-bold font-spacegrotesk dark:text-white">
         Kontakt
       </div>
-      <div class="p-5 text-center space-y-8">
+      <div class="p-5 text-center space-y-8 dark:text-neutral-300">
         <div>
           Du willst zusammen arbeiten oder hast Fragen?
         </div>
         <div class="mb-6">
-          <a href="mailto:rupert.brandstaetter@gmail.com" class="bg-rose-600 hover:bg-rose-700 px-6 py-3 text-3xl text-white">
+          <a href="mailto:rupert.brandstaetter@gmail.com" class="bg-rose-500 hover:bg-rose-700 px-6 py-3 text-3xl text-white">
             Sag Hallo! &#128075;
           </a>
         </div>

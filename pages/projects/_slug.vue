@@ -6,13 +6,15 @@
         &larr; Zurück
       </NuxtLink>
       <div class="mt-8">
+        <div class="text-md pl-2">
+          {{ project.year }}
+        </div>
         <h1 class="text-5xl font-extrabold mb-2 font-spacegrotesk">
           {{ project.title }}
         </h1>
         <h3>
           {{ project.headline }}
         </h3>
-        <p>Article last updated: {{ project.year }}</p>
         <nuxt-content :document="project" class="mt-4 prose" />
       </div>
     </div>

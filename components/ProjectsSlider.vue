@@ -11,15 +11,15 @@
         <NuxtLink :to="`projects/${project.slug}`" class="group">
           <img class="h-auto w-auto" :src="`/images/projects/${project.project_name}/${project.hero_image}`">
           <div class="p-2">
-            <div class="text-xl mt-4 group-hover:text-rose-600 font-extrabold uppercase">
+            <div class="text-xl mt-4 group-hover:text-rose-600 font-extrabold uppercase transition dark:text-white">
               {{ project.title }}
             </div>
-            <div class="mb-3 text-md font-light group-hover:text-rose-600">
+            <div class="mb-1 text-md font-light group-hover:text-rose-600 transition dark:text-neutral-300">
               {{ project.headline }}
             </div>
           </div>
         </NuxtLink>
-        <a :href="project.url" class="p-2 uppercase tracking-tighter font-semibold hover:text-rose-600 transition hover:underline">
+        <a :href="project.url" class="p-2 uppercase tracking-tighter font-semibold hover:text-rose-600 transition hover:underline dark:text-white">
           {{ project.urlCopy }}
         </a>
       </div>

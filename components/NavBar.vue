@@ -1,7 +1,7 @@
 <template>
   <nav class="px-4 sm:px-4 py-8">
     <div class="container flex flex-wrap justify-between items-center mx-auto font-spacegrotesk">
-      <a href="#" class="flex text-3xl md:text-5xl font-extrabold p-4 rounded-lg text-neutral-800 hover:text-rose-500 transition">
+      <a href="#" class="flex text-3xl md:text-5xl font-extrabold p-4 rounded-lg text-neutral-800 dark:text-rose-500 hover:text-rose-500 dark:hover:text-rose-600 transition">
         RB
       </a>
       <div class="flex md:order-2">

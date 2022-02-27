@@ -25,7 +25,7 @@
     <ProjectsSlider :projects="projects" />
 
     <div class="mt-32 mb-20">
-      <h1 class="text-center text-5xl font-bold mb-12 font-spacegrotesk dark:text-white">
+      <h1 class="text-center text-4xl md:text-5xl font-bold mb-12 font-spacegrotesk dark:text-white">
         Verwendete Technologien
       </h1>
       <div class="flex flex-wrap space-x-3 justify-center px-4 md:px-24">
@@ -36,7 +36,7 @@
     </div>
 
     <div class="mt-28 mb-20 px-4">
-      <div class="text-center text-5xl font-bold font-spacegrotesk dark:text-white">
+      <div class="text-center text-4xl md:text-5xl font-bold font-spacegrotesk dark:text-white">
         Kontakt
       </div>
       <div class="p-5 text-center space-y-8 dark:text-neutral-300">

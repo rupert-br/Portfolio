@@ -13,8 +13,6 @@ technologies:
  - HTML
 ---
 
-# Umsetzung von einem Designkonzept in Wordpress über HTML und CSS 
+## Umsetzung von einem Designkonzept in Wordpress mit HTML und CSS 
 
 Test 123 Lorem iossafhdsfh asdfhjsdhfasd asdfsdaf asdfdsfa
-
-## Überschrift 2

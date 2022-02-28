@@ -12,7 +12,3 @@ technologies:
  - CSS
  - HTML
 ---
-
-## Umsetzung von einem Designkonzept in Wordpress mit HTML und CSS 
-
-Test 123 Lorem iossafhdsfh asdfhjsdhfasd asdfsdaf asdfdsfa

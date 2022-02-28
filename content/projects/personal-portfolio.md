@@ -10,4 +10,6 @@ technologies:
  - NuxtJS
  - HTML
  - TailwindCSS
+ - Javascript
+ - VueJS
 ---

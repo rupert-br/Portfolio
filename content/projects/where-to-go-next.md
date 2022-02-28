@@ -11,5 +11,5 @@ technologies:
  - Node.js
  - HTML
  - Bootstrap
- - Vue.js
+ - VueJS
 ---

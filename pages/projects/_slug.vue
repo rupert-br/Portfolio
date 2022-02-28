@@ -28,7 +28,7 @@
               Verwendete Technologien
             </h3>
             <div class="flex flex-wrap space-x-3 mt-2">
-              <div v-for="tech in project.technologies" :key="tech" class="bg-rose-500 px-3 py-2 text-sm text-white">
+              <div v-for="tech in project.technologies" :key="tech" class="bg-rose-500 px-3 py-2 mb-2 text-sm text-white">
                 {{ tech }}
               </div>
             </div>

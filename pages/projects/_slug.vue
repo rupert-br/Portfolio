@@ -5,7 +5,7 @@
       <NuxtLink to="/project" class="bg-rose-500 text-white mx-2 md:mx-12 py-2 px-3">
         &larr; Zurück
       </NuxtLink>
-      <div class="mt-8 grid grid-cols-1 md:grid-cols-2 mb-20 divide-y md:divide-y-0 divide-rose-500/20 md:divide-x md:divide-rose-500/20">
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-2 mb-20 divide-y md:divide-y-0 divide-rose-500/20 md:divide-x md:divide-rose-500/20 dark:text-white">
         <div class="px-2 md:px-12">
           <div class="text-md mb-2">
             {{ project.year }}

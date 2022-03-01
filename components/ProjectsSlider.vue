@@ -10,7 +10,7 @@
       <div v-for="project in projects" :key="project.slug" class="flex-none m-5 w-96">
         <NuxtLink :to="`projects/${project.slug}`" class="group">
           <img class="h-auto w-auto" :src="`/images/projects/${project.project_name}/${project.hero_image}`">
-          <div class="p-2">
+          <div class="px-5 py-2">
             <div class="text-xl mt-4 group-hover:text-rose-800 font-extrabold uppercase transition dark:text-white">
               {{ project.title }}
             </div>
@@ -19,7 +19,7 @@
             </div>
           </div>
         </NuxtLink>
-        <a :href="project.url" class="p-2 uppercase tracking-tighter font-semibold hover:text-rose-600 transition hover:underline dark:text-white">
+        <a :href="project.url" class="px-5 py-2 uppercase tracking-tighter font-semibold hover:text-rose-800 transition hover:underline dark:text-white">
           {{ project.urlCopy }}
         </a>
       </div>

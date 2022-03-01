@@ -11,5 +11,5 @@ technologies:
  - HTML
  - TailwindCSS
  - Javascript
- - VueJS
+ - Vue.js
 ---

@@ -15,7 +15,7 @@
 
     <div class="flex flex-col mx-auto mt-32">
       <h1 class="text-center text-4xl md:text-5xl font-bold font-spacegrotesk dark:text-white">
-        Akutelle Projekte
+        Aktuelle Projekte
       </h1>
       <NuxtLink to="/project" class="flex justify-center mt-2 text-neutral-500 hover:text-rose-600 dark:text-neutral-300">
         Alle Projekte ansehen &rarr;

@@ -43,10 +43,11 @@
         <div>
           Du willst zusammen arbeiten oder hast Fragen?
         </div>
-        <div class="mb-6">
-          <a href="mailto:rupert.brandstaetter@gmail.com" class="bg-rose-500 hover:bg-rose-700 px-6 py-3 text-3xl text-white">
-            Sag Hallo! &#128075;
+        <div class="bg-rose-500 hover:bg-rose-700 px-6 transition-all py-3 text-3xl cursor-pointer max-w-fit flex justify-center mx-auto">
+          <a href="mailto:rupert.brandstaetter@gmail.com" class="text-white pr-2">
+            Sag Hallo!
           </a>
+          <div class="animate-wiggle">&#128075;</div>
         </div>
       </div>
     </div>

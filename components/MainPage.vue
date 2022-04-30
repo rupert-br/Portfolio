@@ -2,7 +2,7 @@
   <div class="px-2 md:px-40">
     <div class="mt-16 mb-20 md:mt-20 md:mb-20 mx-auto max-w-6xl">
       <div class="flex flex-col md:flex-row items-center mx-auto">
-        <div class="">
+        <div id="hero">
           <div class="text-4xl md:text-6xl font-bold md:pb-6 font-spacegrotesk dark:text-white">
             Hello, I'm Rupert
           </div>
@@ -17,7 +17,7 @@
       <h1 class="text-center text-4xl md:text-5xl font-bold font-spacegrotesk dark:text-white">
         Aktuelle Projekte
       </h1>
-      <NuxtLink to="/project" class="flex justify-center mt-2 text-neutral-500 hover:text-rose-600 dark:text-neutral-300">
+      <NuxtLink to="/projects" class="flex justify-center mt-2 text-neutral-500 hover:text-rose-600 dark:text-neutral-300">
         Alle Projekte ansehen &rarr;
       </NuxtLink>
     </div>
@@ -29,7 +29,7 @@
         Verwendete Technologien
       </h1>
       <div class="flex flex-wrap space-x-3 justify-center px-4 md:px-24">
-        <div v-for="(key, tech) in technologies" :key="tech" class="my-2 bg-neutral-700 shadow-md shadow-neutral-500/30 hover:bg-rose-600 transition px-4 py-2 text-white text-xl">
+        <div v-for="(key, tech) in technologies" :key="tech" class="cursor-default my-2 bg-neutral-700 shadow-md shadow-neutral-500/30 dark:shadow-lg dark:shadow-rose-500/20 hover:bg-rose-600 transition px-4 py-2 text-white text-xl">
           {{ tech }}
         </div>
       </div>
@@ -47,7 +47,9 @@
           <a href="mailto:rupert.brandstaetter@gmail.com" class="text-white pr-2">
             Sag Hallo!
           </a>
-          <div class="animate-wiggle">&#128075;</div>
+          <div class="animate-wiggle">
+            &#128075;
+          </div>
         </div>
       </div>
     </div>
@@ -55,6 +57,7 @@
 </template>
 
 <script>
+import { gsap } from 'gsap'
 export default {
   props: {
     projects: {
@@ -64,6 +67,19 @@ export default {
     technologies: {
       type: Object,
       required: true
+    }
+  },
+  mounted () {
+    this.init()
+  },
+  methods: {
+    init () {
+      gsap.from('#hero', {
+        opacity: 0,
+        x: 20,
+        duration: 1,
+        delay: 1.4
+      })
     }
   }
 }

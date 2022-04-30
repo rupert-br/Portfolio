@@ -13,7 +13,7 @@
       </div>
     </div>
 
-    <div class="flex flex-col mx-auto mt-32">
+    <div id="projects-section" class="flex flex-col mx-auto mt-32">
       <h1 class="text-center text-4xl md:text-5xl font-bold font-spacegrotesk dark:text-white">
         Aktuelle Projekte
       </h1>
@@ -22,7 +22,7 @@
       </NuxtLink>
     </div>
 
-    <ProjectsSlider :projects="projects" />
+    <ProjectsSlider id="projects-slider" :projects="projects" />
 
     <div class="mt-32 mb-20">
       <h1 class="text-center text-4xl md:text-5xl font-bold mb-12 font-spacegrotesk dark:text-white">
@@ -79,6 +79,18 @@ export default {
         x: 20,
         duration: 1,
         delay: 1.4
+      })
+      gsap.from('#projects-section', {
+        opacity: 0,
+        x: -200,
+        duration: 1,
+        delay: 1.5
+      })
+      gsap.from('#projects-slider', {
+        opacity: 0,
+        y: 300,
+        duration: 1,
+        delay: 1.5
       })
     }
   }

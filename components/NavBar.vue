@@ -5,14 +5,14 @@
         RB
       </a>
       <div class="flex md:order-2">
-        <a id="contact-me" href="mailto:rupert.brandstaetter@gmail.com" class="text-white bg-rose-500 hover:bg-rose-800 focus:ring-4 focus:ring-rose-300 px-3 py-2 hover:py-3 transition-all text-center mr-3 dark:bg-rose-500 dark:hover:bg-rose-700 dark:focus:ring-rose-800">
+        <a id="contact-me" href="mailto:rupert.brandstaetter@gmail.com" class="text-white bg-rose-500 hover:bg-rose-600 focus:ring-4 focus:ring-rose-300 px-3 py-2 md:hover:py-3 transition-all text-center mr-3 dark:bg-rose-500 dark:hover:bg-rose-700 dark:focus:ring-rose-800">
           Kontaktiere mich!
         </a>
         <button
           id="mobile-burger"
           data-collapse-toggle="mobile-menu"
           type="button"
-          class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          class="inline-flex items-center p-2 text-sm text-gray-500 bg-transparent rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
           aria-controls="mobile-menu"
           aria-expanded="false"
           @click="toggleNavbar"
@@ -44,12 +44,12 @@
               </NuxtLink>
             </li> -->
           <li>
-            <NuxtLink id="projekte" to="/projects" href="#" class="block text-lg py-2 pr-4 pl-3 text-zinc-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-rose-600 md:p-0 md:dark:hover:text-white dark:text-zinc-50 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 transition">
+            <NuxtLink id="projekte" to="/project" href="#" class="block text-lg py-2 pr-4 pl-3 text-zinc-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-rose-600 md:p-0 md:dark:hover:text-rose-400 dark:text-zinc-50 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 transition">
               Projekte
             </NuxtLink>
           </li>
           <li>
-            <NuxtLink id="blog" to="/blog" href="#" class="block text-lg py-2 pr-4 pl-3 text-zinc-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-rose-600 md:p-0 md:dark:hover:text-white dark:text-zinc-50 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 transition-all">
+            <NuxtLink id="blog" to="/blog" href="#" class="block text-lg py-2 pr-4 pl-3 text-zinc-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-rose-600 md:p-0 md:dark:hover:text-rose-400 dark:text-zinc-50 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 transition-all">
               Blog
             </NuxtLink>
           </li>

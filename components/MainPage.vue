@@ -17,14 +17,14 @@
       <h1 class="text-center text-4xl md:text-5xl font-bold font-spacegrotesk dark:text-white">
         Aktuelle Projekte
       </h1>
-      <NuxtLink to="/projects" class="flex justify-center mt-2 text-neutral-500 hover:text-rose-600 dark:text-neutral-300">
+      <NuxtLink to="/project" class="flex justify-center mt-2 text-neutral-500 hover:text-rose-600 dark:text-neutral-300">
         Alle Projekte ansehen &rarr;
       </NuxtLink>
     </div>
 
     <ProjectsSlider id="projects-slider" :projects="projects" />
 
-    <div class="mt-32 mb-20">
+    <div id="technologien" class="mt-32 mb-20">
       <h1 class="text-center text-4xl md:text-5xl font-bold mb-12 font-spacegrotesk dark:text-white">
         Verwendete Technologien
       </h1>
@@ -35,7 +35,7 @@
       </div>
     </div>
 
-    <div class="mt-28 mb-20 px-4">
+    <div id="kontakt" class="mt-28 mb-20 px-4">
       <div class="text-center text-4xl md:text-5xl font-bold font-spacegrotesk dark:text-white">
         Kontakt
       </div>
@@ -58,6 +58,10 @@
 
 <script>
 import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+gsap.registerPlugin(ScrollTrigger)
+
 export default {
   props: {
     projects: {
@@ -83,14 +87,34 @@ export default {
       gsap.from('#projects-section', {
         opacity: 0,
         x: -200,
-        duration: 1,
+        duration: 1.5,
         delay: 1.5
       })
       gsap.from('#projects-slider', {
         opacity: 0,
         y: 300,
-        duration: 1,
+        duration: 1.5,
         delay: 1.5
+      })
+      gsap.from('#technologien', {
+        scrollTrigger: {
+          trigger: '#technologien',
+          start: 'center bottom',
+          end: 'center top'
+        },
+        x: 200,
+        delay: 0.4,
+        duration: 1.5,
+        opacity: 0,
+        ease: 'power2'
+      })
+      gsap.from('#kontakt', {
+        scrollTrigger: '#kontakt',
+        x: -200,
+        delay: 0.4,
+        duration: 1.5,
+        opacity: 0,
+        ease: 'power2'
       })
     }
   }

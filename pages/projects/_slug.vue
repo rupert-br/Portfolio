@@ -1,8 +1,8 @@
 <template>
   <div class="bg-slate-50 dark:bg-zinc-800 ">
     <NavBar />
-    <div class="mx-4 md:mx-20 mt-5 md:mt-10">
-      <NuxtLink to="/project" class="bg-rose-500 text-white mx-2 md:mx-12 py-2 px-3">
+    <div id="project-detail" class="mx-4 md:mx-20 mt-5 md:mt-10">
+      <NuxtLink to="/project" class="bg-rose-500 hover:bg-rose-600 text-white mx-2 md:mx-12 py-2 px-3">
         &larr; Zurück
       </NuxtLink>
       <div class="mt-8 grid grid-cols-1 md:grid-cols-2 mb-20 divide-y md:divide-y-0 divide-rose-500/20 md:divide-x md:divide-rose-500/20 dark:text-white">
@@ -41,10 +41,25 @@
 </template>
 
 <script>
+import { gsap } from 'gsap'
+
 export default {
   async asyncData ({ $content, params }) {
     const project = await $content('projects', params.slug).fetch()
     return { project }
+  },
+  mounted () {
+    this.init()
+  },
+  methods: {
+    init () {
+      gsap.from('#project-detail', {
+        y: 400,
+        opacity: 0,
+        duration: 1.5,
+        delay: 1.5
+      })
+    }
   }
 }
 </script>

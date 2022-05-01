@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-7xl mx-auto">
+  <div id="#project-container" class="max-w-7xl mx-auto">
     <div>
       <h1 class="text-center font-spacegrotesk text-5xl font-bold mb-12 mt-10 dark:text-white">
         Projekte
@@ -22,12 +22,23 @@
 </template>
 
 <script>
+import { gsap } from 'gsap'
+
 export default {
   props: {
     projects: {
       type: Array,
       required: true
     }
+  },
+  mounted () {
+    this.init()
+  },
+  methods: {
+    init () {
+      gsap.from('.group', { duration: 1, scale: 0.5, opacity: 0, y: 200, stagger: 0.5 })
+    }
   }
+
 }
 </script>

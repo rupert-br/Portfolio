@@ -1,11 +1,11 @@
 <template>
   <div class="bg-slate-50 dark:bg-zinc-800 ">
     <NavBar />
-    <div id="project-detail" class="mx-4 md:mx-20 mt-5 md:mt-10">
-      <NuxtLink to="/project" class="bg-rose-500 hover:bg-rose-600 text-white mx-2 md:mx-12 py-2 px-3">
+    <div class="mx-4 md:mx-20 mt-5 md:mt-10">
+      <NuxtLink id="project-detail" to="/project" class="bg-rose-500 hover:bg-rose-600 text-white mx-2 md:mx-12 py-2 px-3">
         &larr; Zurück
       </NuxtLink>
-      <div class="mt-8 grid grid-cols-1 md:grid-cols-2 mb-20 divide-y md:divide-y-0 divide-rose-500/20 md:divide-x md:divide-rose-500/20 dark:text-white">
+      <div id="project-content-left" class="mt-8 grid grid-cols-1 md:grid-cols-2 mb-20 divide-y md:divide-y-0 divide-rose-500/20 md:divide-x md:divide-rose-500/20 dark:text-white">
         <div class="px-2 md:px-12">
           <div class="text-md mb-2">
             {{ project.year }}
@@ -21,7 +21,7 @@
             <a :href="project.url" class="hover:text-rose-500 uppercase transition font-bold hover:underline text-lg">{{ project.urlCopy }}</a>
           </div>
         </div>
-        <div class="px-2 md:px-12 mt-0 md:mt-16">
+        <div id="project-content-right" class="px-2 md:px-12 mt-0 md:mt-16">
           <nuxt-content :document="project" class="mt-4 prose" />
           <div>
             <h3 class="font-bold mt-4">
@@ -56,8 +56,20 @@ export default {
       gsap.from('#project-detail', {
         y: 400,
         opacity: 0,
-        duration: 1.5,
+        duration: 1.0,
         delay: 1.5
+      })
+      gsap.from('#project-content-left', {
+        y: 200,
+        opacity: 0,
+        duration: 1.0,
+        delay: 1.6
+      })
+      gsap.from('#project-content-right', {
+        y: 200,
+        opacity: 0,
+        duration: 1.0,
+        delay: 1.7
       })
     }
   }
